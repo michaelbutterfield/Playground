@@ -1,0 +1,132 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Google Angular",
+    "line": 2,
+    "id": "google-angular",
+    "tags": [
+      {
+        "name": "@GoogleFeature",
+        "line": 1
+      }
+    ],
+    "uri": "features\\Google.feature",
+    "elements": [
+      {
+        "id": "google-angular;google-\"angular\"",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Google \"Angular\"",
+        "tags": [
+          {
+            "name": "@GoogleFeature",
+            "line": 1
+          },
+          {
+            "name": "@GoogleScenario",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps\\GoogleSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "steps\\PsychologyDictionarySteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I go to the google search page",
+            "match": {
+              "location": "steps\\GoogleSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the Google website",
+            "match": {
+              "location": "steps\\GoogleSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search \"Angular\"",
+            "match": {
+              "location": "steps\\GoogleSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the input search results will be displayed",
+            "match": {
+              "location": "steps\\GoogleSteps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

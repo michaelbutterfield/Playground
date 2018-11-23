@@ -1,0 +1,17 @@
+{
+    "configurations":
+    [
+        {
+            "name": "Debug Protractor",
+            "type": "node",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceRoot}/node_modules/protractor/built/cli.js",
+            "cwd": "${workspaceFolder}",
+            "args":
+            [
+                "prot.conf.js"
+            ],
+        }
+    ]
+}

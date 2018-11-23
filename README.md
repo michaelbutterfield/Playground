@@ -3,21 +3,21 @@ Angular + Protractor + Typescript + Cucumber
   
 Automating both Angular and non-Angular websites using Cucumber and the Page-Object model.  
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 install i cucumber  
 install i cucumber-js  
 install i cucumber-html-reporter  

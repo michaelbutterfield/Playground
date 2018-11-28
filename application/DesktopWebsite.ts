@@ -5,6 +5,7 @@ import { GoogleSearchedPage } from './pages/GoogleSearchedPage';
 export
 {
     GoogleSearchPage,
+    GoogleSearchedPage,
     PDHomePage
 };
 
@@ -14,7 +15,7 @@ export class DesktopWebsite
     public googlesearchedpage: GoogleSearchedPage;
     public pdhomepage: PDHomePage;
 
-    constructor()
+    constructor ()
     {
         this.googlesearchpage = new GoogleSearchPage();
         this.googlesearchedpage = new GoogleSearchedPage();

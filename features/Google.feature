@@ -1,4 +1,4 @@
-@GoogleFeature
+@Google
 Feature: Google Angular
 
 Background: Go to Google search page

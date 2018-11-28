@@ -5,6 +5,7 @@ exports.GoogleSearchPage = GoogleSearchPage_1.GoogleSearchPage;
 var PDHomePage_1 = require("./pages/PDHomePage");
 exports.PDHomePage = PDHomePage_1.PDHomePage;
 var GoogleSearchedPage_1 = require("./pages/GoogleSearchedPage");
+exports.GoogleSearchedPage = GoogleSearchedPage_1.GoogleSearchedPage;
 var DesktopWebsite = /** @class */ (function () {
     function DesktopWebsite() {
         this.googlesearchpage = new GoogleSearchPage_1.GoogleSearchPage();

@@ -41,6 +41,25 @@ export class Element
       assertion.assertThat(element, assertion.not(null))
     }
   }
+  
+  public AssertElementIsEnabled(): void
+  {
+    let element;
+
+    try
+    {
+      element = this.getElement(true, true);
+    }
+    catch (Error)
+    {
+
+    }
+    finally
+    {
+      //assertion.assertThat(element, assertion.not(null))
+      assertion.assertThat(element, assertion.not(null))
+    }
+  }
 
   public AssertElementIsNotDisplayed(): void
   {

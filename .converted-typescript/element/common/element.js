@@ -64,6 +64,18 @@ var Element = /** @class */ (function () {
             assertion.assertThat(element, assertion.not(null));
         }
     };
+    Element.prototype.AssertElementIsEnabled = function () {
+        var element;
+        try {
+            element = this.getElement(true, true);
+        }
+        catch (Error) {
+        }
+        finally {
+            //assertion.assertThat(element, assertion.not(null))
+            assertion.assertThat(element, assertion.not(null));
+        }
+    };
     Element.prototype.AssertElementIsNotDisplayed = function () {
         var element;
         try {

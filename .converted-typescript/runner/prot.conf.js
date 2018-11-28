@@ -33,7 +33,10 @@ exports.config = {
         format: 'json:reports/json/cucumber_report.json',
         plugin: ["pretty"],
         require: ['../../.converted-typescript/steps/*.js', '../../.converted-typescript/support/*.js'],
-        tags: '@GoogleFeature'
+        /* ************************* */
+        /* Change this to change which scenario/tests to run */
+        tags: '@TrelloCreateBoard'
+        /* ************************* */
     },
     // These capabilities tell protractor about the browser
     // it should use for the tests. In this case chrome.

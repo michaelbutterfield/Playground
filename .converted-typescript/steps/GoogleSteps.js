@@ -41,7 +41,7 @@ var assertion = require('hamjest');
 var protractor_1 = require("protractor");
 var DesktopWebsite_1 = require("../application/DesktopWebsite");
 var cucumber_1 = require("cucumber");
-var website;
+var website; // = new DesktopWebsite();
 cucumber_1.Before(function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         website = new DesktopWebsite_1.DesktopWebsite();
@@ -61,6 +61,9 @@ Given('I go to the google search page', function () {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, protractor_1.browser.get("https://www.google.co.uk")];
                 case 1:
+                    _a.sent();
+                    return [4 /*yield*/, website.googlesearchpage.searchButton.AssertElementIsEnabled()];
+                case 2:
                     _a.sent();
                     return [2 /*return*/];
             }

@@ -10,9 +10,9 @@ export const config: Config =
     // Specify the patterns for test files
     // to include in the test run
     specs:
-    [
-        '../../features/*.feature'
-    ],
+        [
+            '../../features/*.feature'
+        ],
 
     // Use this to exclude files from the test run.
     // In this case it's empty since we want all files
@@ -44,7 +44,10 @@ export const config: Config =
         format: 'json:reports/json/cucumber_report.json',
         plugin: ["pretty"],
         require: ['../../.converted-typescript/steps/*.js', '../../.converted-typescript/support/*.js'],
-        tags: '@GoogleFeature'
+        /* ************************* */
+        /* Change this to change which scenario/tests to run */
+        tags: '@TrelloCreateBoard'
+        /* ************************* */
     },
 
     // These capabilities tell protractor about the browser

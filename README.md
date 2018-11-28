@@ -1,20 +1,38 @@
 # Playground
-Angular + Protractor + Typescript + Cucumber
-
-install i cucumber  
-install i cucumber-js  
-install i cucumber-html-reporter  
-install i cucumber-tsflow  
-install i hamjest  
-install i protractor  
-install i protractor-cucumber-framework  
-install selenium-webdriver  
-install i typescript  
+Angular + Protractor + Typescript + Cucumber  
   
-install i @types/cucumber  
-install i @types/mkdirp  
-install i @types/node  
-install i @types/protractor  
-install i @types/q  
-install i @types/selenium-webdriver  
+Automating both Angular and non-Angular websites using Cucumber and the Page-Object model.  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+npm i cucumber  
+npm i cucumber-js  
+npm i cucumber-html-reporter  
+npm i cucumber-tsflow  
+npm i frisby
+npm i hamjest  
+npm i protractor  
+npm i protractor-cucumber-framework  
+npm i selenium-webdriver  
+npm i typescript  
+  
+npm i @types/cucumber  
+npm i @types/mkdirp  
+npm i @types/node  
+npm i @types/protractor  
+npm i @types/q  
+npm i @types/selenium-webdriver  
   

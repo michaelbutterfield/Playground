@@ -46,7 +46,7 @@ export const config: Config =
         require: ['../../.converted-typescript/steps/*.js', '../../.converted-typescript/support/*.js'],
         /* ************************* */
         /* Change this to change which scenario/tests to run */
-        tags: '@TrelloCreateBoard'
+        tags: '@GetBoardId'
         /* ************************* */
     },
 

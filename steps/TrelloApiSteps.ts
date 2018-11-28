@@ -1,17 +1,25 @@
 import { Given, Then, Before } from "cucumber";
-import { ApiHelper } from "../api/ApiHelper";
+import { TrelloApiHelper } from "../api/TrelloApiHelper";
 
 const frisby = require('frisby');
 
 Before(async () =>
 {
-    ApiHelper.ReadApiKeyToken();
+    TrelloApiHelper.ReadApiKeyToken();
 });
+
+Given('I try and get the board Id', function ()
+        {
+            let response = TrelloApiHelper.GetBoardId("dgfasr");
+            console.log(response);
+        }
+     );
 
 Given('I query Trello to create a new board', function ()
         {
-            console.log('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + ApiHelper.GetApiKey() + '&token=' + ApiHelper.GetApiToken());
-            frisby.post('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + ApiHelper.GetApiKey() + '&token=' + ApiHelper.GetApiToken())
+            //Assumes JSON and sends the header Content-Type: application/json by default.
+            console.log('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + TrelloApiHelper.GetApiKey() + '&token=' + TrelloApiHelper.GetApiToken());
+            frisby.post('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + TrelloApiHelper.GetApiKey() + '&token=' + TrelloApiHelper.GetApiToken())
             .expect('status', 200);
         }
      );

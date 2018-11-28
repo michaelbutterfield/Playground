@@ -37,17 +37,22 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var cucumber_1 = require("cucumber");
-var ApiHelper_1 = require("../api/ApiHelper");
+var TrelloApiHelper_1 = require("../api/TrelloApiHelper");
 var frisby = require('frisby');
 cucumber_1.Before(function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        ApiHelper_1.ApiHelper.ReadApiKeyToken();
+        TrelloApiHelper_1.TrelloApiHelper.ReadApiKeyToken();
         return [2 /*return*/];
     });
 }); });
+cucumber_1.Given('I try and get the board Id', function () {
+    var response = TrelloApiHelper_1.TrelloApiHelper.GetBoardId("dgfasr");
+    console.log(response);
+});
 cucumber_1.Given('I query Trello to create a new board', function () {
-    console.log('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + ApiHelper_1.ApiHelper.GetApiKey() + '&token=' + ApiHelper_1.ApiHelper.GetApiToken());
-    frisby.post('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + ApiHelper_1.ApiHelper.GetApiKey() + '&token=' + ApiHelper_1.ApiHelper.GetApiToken())
+    //Assumes JSON and sends the header Content-Type: application/json by default.
+    console.log('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + TrelloApiHelper_1.TrelloApiHelper.GetApiKey() + '&token=' + TrelloApiHelper_1.TrelloApiHelper.GetApiToken());
+    frisby.post('https://api.trello.com/1/boards/?name=Javascript Test Board' + '&key=' + TrelloApiHelper_1.TrelloApiHelper.GetApiKey() + '&token=' + TrelloApiHelper_1.TrelloApiHelper.GetApiToken())
         .expect('status', 200);
 });
 cucumber_1.Given('I query Trello to delete the board', function () {

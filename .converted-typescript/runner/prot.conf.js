@@ -35,7 +35,7 @@ exports.config = {
         require: ['../../.converted-typescript/steps/*.js', '../../.converted-typescript/support/*.js'],
         /* ************************* */
         /* Change this to change which scenario/tests to run */
-        tags: '@TrelloCreateBoard'
+        tags: '@GetBoardId'
         /* ************************* */
     },
     // These capabilities tell protractor about the browser

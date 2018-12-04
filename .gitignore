@@ -1,7 +1,4 @@
 node_modules/
 reports/
 README.md
-.converted-typescript/
-.converted-typescript/api/*.js
-.converted-typescript/common/*.js
-.converted-typescript/steps/*.js
+.converted-typescript/*

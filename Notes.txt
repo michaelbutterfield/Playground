@@ -1,0 +1,40 @@
+Install the required packages:
+
+npm i cucumber
+npm i cucumber-js
+npm i cucumber-html-reporter
+npm i cucumber-tsflow
+npm i frisby
+npm i hamjest
+npm i protractor
+npm i protractor-cucumber-framework
+npm i selenium-webdriver
+npm i typescript
+
+npm i @types/cucumber
+npm i @types/mkdirp
+npm i @types/node
+npm i @types/protractor
+npm i @types/q
+npm i @types/selenium-webdriver
+
+(Maybe put it in a batch file)
+
+To start the instance of Selenium Server:
+
+webdriver-manager clean
+webdriver-manager update --standalone --versions.standalone=3.8.0
+webdriver-manager start --versions.standalone=3.8.0
+
+To build the typescript and convert it to javascript to be able to run:
+
+tsc
+
+To run the framework:
+
+npm run play
+(this is a keyword that does multiple statements in one - it can be found in package.json)
+
+OR
+
+protractor ./.converted-typescript/runner/prot.conf.js

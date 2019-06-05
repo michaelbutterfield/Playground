@@ -17,7 +17,7 @@ export class GoogleSearchedPage extends Page
 
     private async buildPage()
     {
-        this.searchResult = new Button(By.xpath("//a[@href='https://angular.io/guide/quickstart']"), "Google Search Result", this.name);
+        this.searchResult = new Button(By.xpath("//h3[@class='LC20lb']"), "Google Search Result", this.name);
         this.searchTextBox = new TextInput(By.xpath("//input[@class='gLFyf gsfi'][@type='text']"), "Google Search Text Box", this.name);
     }
 }

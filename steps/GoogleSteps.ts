@@ -38,6 +38,8 @@ Then('the input search results will be displayed', async function ()
 {
     //await AssertionHelper.AssertThat(website.google.searchButton.getText(), assertion.containsString("Angular"), "Test");
     //await assertion.assertThat(website.googlesearchedpage.searchTextBox.getAttribute("value"), assertion.equalTo("Angular"));
-    await website.googlesearchedpage.searchResult.AssertElementIsDisplayed();
+    
+    await assertion.assertThat(website.googlesearchedpage.searchResult.getAttribute("innerText"), assertion.is("Angular(web framework) - Wikipedia"));
+    //await website.googlesearchedpage.searchResult.AssertElementIsDisplayed();
     //await Assertions.assertThat()
 }); 

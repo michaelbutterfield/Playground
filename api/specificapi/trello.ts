@@ -84,7 +84,8 @@ export class trello extends apihelper
         // //give user agent (NOT ABSOLUTELY REQUIRED) and base url
         // let rest: rm.RestClient = new rm.RestClient("","https://api.trello.com/");
 
-        // let res: rm.IRestResponse<TrelloBoardData.BoardRootObject> = await rest.get<TrelloBoardData.BoardRootObject>(String.Format("/1/search?query={0}&key={1}&token={2}", boardName, TrelloApiHelper.GetApiKey(), TrelloApiHelper.GetApiToken());
+        // let res: rm.IRestResponse<TrelloBoardData.BoardRootObject> = await rest.get<TrelloBoardData.BoardRootObject>(String.Format(
+        //    "/1/search?query={0}&key={1}&token={2}", boardName, TrelloApiHelper.GetApiKey(), TrelloApiHelper.GetApiToken());
 
         // res.result.boards[0].id
 
